@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            background-color: #de1313;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #e82a2a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ac0c0c;
+        }
+
+        #task-list {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        div.task-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .completed {
+            background-color: #d3ffd3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    
+    <!-- Form to add tasks -->
+    <form id="task-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+        <button type="submit">Add Task</button>
+    </form>
+    
+    
+    <div id="task-list"></div>
+
+    
+    <script src="form.js"></script>
+    
+</body>
+</html>

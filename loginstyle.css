@@ -1,0 +1,62 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.6) url('https://i1.wp.com/workalpha.com/wp-content/uploads/2018/01/To-Do-List.jpg?fit=1920%2C1080&ssl=1');
+    background-blend-mode: darken;
+}
+/*
+.logo{
+    color: #e10c0c;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: xx-large;
+    
+}*/
+.logo {
+    float: left;
+    background-color: #fff; /* Background color for the logo */
+    color: #db1111; /* Text color for the logo */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    padding: 0px 10px; /* Adjust padding as needed */
+    margin-left: 10px; /* Adjust margin as needed */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  } 
+p{
+    color: #fff;
+    position: absolute;
+    right: 17%;
+    
+}
+.btn-login{
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #e50914;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 0%;
+    position: fixed;
+    right: 5%;
+}
+
+.nav{
+    padding-top: 5px;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    
+  }
+
+
+
+

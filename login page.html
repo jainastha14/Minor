@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMitra-Log in</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">TaskMitra</div>
+    
+       <p>No account?</p>
+    
+       <a class="btn-login" href="#">Sign In</a>
+   </div> 
+    <body>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="text-center">Login</h2>
+                        </div>
+                        <div class="card-body">
+                            <form action="your_server_script.php" method="post">
+                                <div class="form-group">
+                                    <label for="login_method">Login Method:</label>
+                                    <select class="form-control" id="login_method" name="login_method" required>
+                                        <option value="email">Email</option>
+                                        <option value="mobile">Mobile Number</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="email_section">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                                <div class="form-group" id="mobile_section" style="display:none;">
+                                    <label for="mobile">Mobile Number:</label>
+                                    <input type="tel" class="form-control" id="mobile" name="mobile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+                               
+                               <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <script>
+            document.getElementById("login_method").addEventListener("change", function() {
+                var loginMethod = this.value;
+                if (loginMethod === "email") {
+                    document.getElementById("email_section").style.display = "block";
+                    document.getElementById("mobile_section").style.display = "none";
+                } else if (loginMethod === "mobile") {
+                    document.getElementById("email_section").style.display = "none";
+                    document.getElementById("mobile_section").style.display = "block";
+                }
+            });
+        </script>
+    </body>
+    </html>
+   </div>
+</body>
+</html>
